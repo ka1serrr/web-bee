@@ -6,13 +6,18 @@ export const Header = () => {
       <div className='container'>
         <div className={styles.wrapper}>
           <div className={styles.headerUserPages}>
-            <span>User pages</span> - Profile
+            <img src='img/header/arrow-back.svg' alt='arrow' />
+            <div>
+              <span>User pages</span> - Profile
+            </div>
           </div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div>
+            <ul className={styles.headerStatistic}>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
