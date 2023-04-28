@@ -9,6 +9,7 @@
 
   .wrapper {
     @include flex-justify;
+    flex-wrap: wrap;
   }
 
   .headerUserPages {
