@@ -27,9 +27,8 @@
     width: 100%;
   }
   .headerStatistic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-ul-row;
+
     >.headerStatisticItem {
       display: flex;
       justify-content: space-between;

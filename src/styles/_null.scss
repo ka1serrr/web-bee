@@ -110,6 +110,16 @@ body {
   margin: 0 auto;
 }
 
+.hamburger {
+  span {
+    background: $color-black;
+    width: 13px;
+    height: 2px;
+    margin-bottom: 3px;
+    display: block;
+  }
+}
+
 
 
 

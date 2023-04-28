@@ -1,7 +1,26 @@
 @import "@/styles/_vars.scss";
+@import "@/styles/_mixins.scss";
 
 .nav {
   width: 100%;
   min-height: 40px;
   background: $color-bg2;
+
+  .wrapper {
+    @include flex-justify;
+  }
+
+  .navLeft {
+    @include flex-ul-row;
+    max-width: 286px;
+    width: 100%;
+
+    >.navItem {
+      @include flex-justify;
+      justify-content: space-around;
+      max-width: 106px;
+      width: 100%;
+    }
+
+  }
 }
