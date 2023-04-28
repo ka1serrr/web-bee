@@ -98,9 +98,10 @@ legend {
   display: block;
 }
 
-.body {
+body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  background-color: $color-bg;
 }
 
 .container {

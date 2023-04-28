@@ -12,6 +12,7 @@
   "dependencies": {
     "@loadable/component": "^5.15.3",
     "@reduxjs/toolkit": "^1.9.5",
+    "@types/node": "^18.16.2",
     "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

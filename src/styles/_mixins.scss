@@ -17,4 +17,5 @@
 @mixin flex-justify {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
