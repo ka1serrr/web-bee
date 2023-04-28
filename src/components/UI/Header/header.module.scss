@@ -21,7 +21,27 @@
     }
   }
 
+  .headerStatisticWrapper {
+    max-width: 232px;
+    width: 100%;
+  }
   .headerStatistic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    >.headerStatisticItem {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
 
+      >img {
+        display: block;
+      }
+      >span {
+        display: block;
+        text-transform: capitalize;
+      }
+    }
   }
 }
