@@ -1,0 +1,19 @@
+@import "@/styles/_vars.scss";
+
+.comment {
+  padding: 0 8px;
+  border-left: 2px solid $color-grey;
+
+  .text {
+    color: $color-black;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+
+  .author {
+    color: $color-second-tx;
+
+  }
+}

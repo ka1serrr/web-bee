@@ -5,6 +5,7 @@ import { NavBarItem } from '@/components/UI/NavBar/NavBarItem/NavBarItem';
 import { NavItem } from '@/components/UI/NavBar/types';
 import { navBarRightBase } from '@/components/UI/NavBar/navBarRightBase';
 
+// TODO: для планшетов и телефонов нарисовать выезжающую штучку.
 const NavBarLeftContent = () => {
   return (
     <>

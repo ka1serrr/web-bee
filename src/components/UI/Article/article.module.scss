@@ -1,0 +1,51 @@
+@import '@/styles/_vars.scss';
+
+.article, .articleClosed {
+  background: $color-white;
+}
+
+.article {
+  max-height: 672px;
+  >.wrapper {
+    padding: 56px 32px 32px;
+  }
+  .content {
+    visibility: visible;
+  }
+
+  .image {
+    max-height: 424px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .author {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $color-black;
+    margin-bottom: 16px;
+
+    img {
+      margin-right: 8px;
+    }
+
+    span {
+      color: $color-blue;
+    }
+
+  }
+}
+
+.articleClosed {
+  max-height: 56px;
+  overflow: hidden;
+
+  >.wrapper {
+    padding: 18px 32px;
+
+  }
+  .content {
+    visibility: hidden;
+  }
+}

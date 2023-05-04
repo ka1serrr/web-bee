@@ -1,7 +1,8 @@
 import styles from './header.module.scss';
-
+// TODO: media - нужно сделать по центру всё для телефонов в планшетов
 export const Header = () => {
-  return (<header className={styles.header}>
+  return (
+    <header className={styles.header}>
       <div className='container'>
         <div className={styles.wrapper}>
           <div className={styles.headerUserPages}>
@@ -28,5 +29,6 @@ export const Header = () => {
           </div>
         </div>
       </div>
-    </header>);
+    </header>
+  );
 };
