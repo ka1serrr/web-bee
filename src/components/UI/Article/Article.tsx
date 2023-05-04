@@ -20,6 +20,16 @@ export const Article = ({ img, comment, commentsNumber, time, timeAgo, title, vi
             </div>
           </div>
           <CommentsSection author={author} text={comment} time={time} />
+          <div className={styles.views}>
+            <div className={styles.viewsItem}>
+              <img src='img/article/views.svg' alt='views' />
+              <span>{views}</span>
+            </div>
+            <div className={styles.viewsItem}>
+              <img src='img/article/comment.svg' alt='comment' />
+              <span>{commentsNumber}</span>
+            </div>
+          </div>
         </div>
       </div>
     </article>

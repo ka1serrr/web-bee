@@ -33,7 +33,25 @@
     span {
       color: $color-blue;
     }
+  }
 
+  .views {
+    display: flex;
+    align-items: center;
+
+
+    &Item {
+      display: flex;
+      align-items: center;
+      margin-right: 32px;
+    }
+
+    span {
+      margin-left: 8px;
+      display: block;
+      color: $color-black;
+      font-size: 16px;
+    }
   }
 }
 
