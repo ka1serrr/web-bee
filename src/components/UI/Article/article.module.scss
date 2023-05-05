@@ -2,15 +2,27 @@
 
 .article, .articleClosed {
   background: $color-white;
+  margin-bottom: 32px;
 }
 
 .article {
   max-height: 672px;
+  transition: max-height .2s ease-in;
+
+
+  .articleClosedContent {
+    visibility: hidden;
+    display: none;
+  
+  }
+
   >.wrapper {
     padding: 56px 32px 32px;
   }
   .content {
     visibility: visible;
+    opacity: 1;
+    transition: visibility .2s ease, opacity .2s ease;
   }
 
   .image {
@@ -58,12 +70,41 @@
 .articleClosed {
   max-height: 56px;
   overflow: hidden;
+  transition: max-height .2s ease-in;
+  cursor: pointer;
+
 
   >.wrapper {
-    padding: 18px 32px;
+    padding: 17px 32px;
+  }
+
+  .articleClosedContent {
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+
+    >.title, .time {
+      color: $color-black;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    >.time {
+      img {
+        margin-right: 8px;
+      }
+
+      >.showMore {
+        margin-left: 16px;
+      }
+    }
 
   }
+
   .content {
     visibility: hidden;
+    opacity: 0;
+    transition: visibility .2s ease, opacity .2s ease;
   }
 }

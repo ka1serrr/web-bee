@@ -2,8 +2,9 @@ import styles from './mainPage.module.scss';
 import { Article } from '@/components/UI/Article/Article';
 import { mainPageData } from './mainPageData';
 import { MainPageArticle } from '@/components/pages/MainPage/types';
+import { Profile } from '@/components/UI/Profile/Profile';
 
-const Content = () => {
+const Articles = () => {
   return (
     <>
       {mainPageData.map((item: MainPageArticle, index: number) => (
@@ -26,7 +27,14 @@ const MainPage = () => {
   return (
     <div className={styles.mainPage}>
       <div className='container'>
-        <Content />
+        <div className={styles.content}>
+          <div className={styles.articles}>
+            <Articles />
+          </div>
+          <div className={styles.profileAndSettings}>
+            <Profile />
+          </div>
+        </div>
       </div>
     </div>
   );

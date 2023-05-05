@@ -1,0 +1,19 @@
+@import "@/styles/_vars.scss";
+
+.profile {
+  padding: 32px 50px;
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 264px;
+
+  >.avatar {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 132px;
+    overflow: hidden;
+    height: 132px;
+
+  }
+}
