@@ -1,0 +1,28 @@
+@import "@/styles/_vars.scss";
+@import "@/styles/_mixins.scss";
+
+.item {
+  margin-bottom: $pd-16;
+  @include flex-justify;
+
+  .text {
+    @include flex-justify;
+
+    >img {
+      margin-right: $pd-16;
+    }
+
+    >span {
+      color: $color-black;
+      font-size: 14px;
+    }
+  }
+
+  .notifications {
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 0px 5px;
+    text-align: right;
+  }
+
+}

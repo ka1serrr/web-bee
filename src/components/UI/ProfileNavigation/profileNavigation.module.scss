@@ -1,0 +1,43 @@
+@import "@/styles/_vars.scss";
+@import "@/styles/_mixins.scss";
+
+.profileNavigation {
+  width: 264px;
+  margin-top: $pd-32;
+
+  >.header {
+    cursor: pointer;
+    padding: $pd-8 $pd-16;
+    @include flex-justify;
+    color: $color-black;
+    font-size: 14px;
+    background: $color-white;
+
+    >span {
+      display: block;
+      font-weight: 500;
+    }
+  }
+
+  .itemsWrapper {
+    background: $color-white;
+    transition: visibility .2s ease-in, opacity .2s ease-in;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .itemsClosedWrapper {
+    transition: all .2s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .2s ease-in, opacity .2s ease-in;
+  }
+
+  .items {
+    border-top: 2px solid  $color-grey;
+  }
+
+  .wrapper {
+    padding: $pd-16 $pd-16 0.1px;
+  }
+}

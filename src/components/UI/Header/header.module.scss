@@ -5,7 +5,7 @@
   background: $color-white;
   min-height: 64px;
   width: 100%;
-  padding: 8px 0;
+  padding: $pd-8 0;
 
   .wrapper {
     @include flex-justify;
@@ -15,7 +15,7 @@
   .headerUserPages {
     @include flex-justify;
     img {
-      margin-right: 8px;
+      margin-right: $pd-8;
     }
     span {
       font-weight: 500;

@@ -1,7 +1,8 @@
 @import "@/styles/_vars.scss";
+@import "@/styles/_mixins.scss";
 
 .profile {
-  padding: 32px 50px;
+  padding: $pd-32 50px;
   background: $color-white;
   display: flex;
   flex-direction: column;
@@ -15,5 +16,25 @@
     overflow: hidden;
     height: 132px;
 
+  }
+
+  >.name {
+    text-align: center;
+    color: $color-black;
+    font-size: 18px;
+    margin-top: $pd-16;
+  }
+
+  >.jobTitle {
+    text-align: center;
+    font-size: 14px;
+    margin-top: $pd-8;
+    color: $color-second-tx
+  }
+
+  >.socialnets {
+    @include flex-justify;
+    width: 76px;
+    margin: $pd-16 auto 0;
   }
 }

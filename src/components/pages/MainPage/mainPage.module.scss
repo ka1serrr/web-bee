@@ -1,5 +1,7 @@
+@import '@/styles/_vars.scss';
+
 .mainPage {
-  margin-top: 32px;
+  margin-top: $pd-32;
 
 
   .content {
@@ -8,7 +10,7 @@
   }
 
   .articles {
-    margin-right: 32px;
+    margin-right: $pd-32;
   }
 
   .profileAndSettings {

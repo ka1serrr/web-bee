@@ -2,7 +2,7 @@
 
 .article, .articleClosed {
   background: $color-white;
-  margin-bottom: 32px;
+  margin-bottom: $pd-32;
 }
 
 .article {
@@ -17,7 +17,7 @@
   }
 
   >.wrapper {
-    padding: 56px 32px 32px;
+    padding: 56px $pd-32 $pd-32;
   }
   .content {
     visibility: visible;
@@ -28,7 +28,7 @@
   .image {
     max-height: 424px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: $pd-16;
   }
 
   .author {
@@ -36,10 +36,10 @@
     align-items: center;
     font-size: 14px;
     color: $color-black;
-    margin-bottom: 16px;
+    margin-bottom: $pd-16;
 
     img {
-      margin-right: 8px;
+      margin-right: $pd-8;
     }
 
     span {
@@ -55,14 +55,14 @@
     &Item {
       display: flex;
       align-items: center;
-      margin-right: 32px;
+      margin-right: $pd-32;
     }
 
     span {
-      margin-left: 8px;
+      margin-left: $pd-8;
       display: block;
       color: $color-black;
-      font-size: 16px;
+      font-size: $pd-16;
     }
   }
 }
@@ -75,7 +75,7 @@
 
 
   >.wrapper {
-    padding: 17px 32px;
+    padding: 17px $pd-32;
   }
 
   .articleClosedContent {
@@ -85,18 +85,18 @@
 
     >.title, .time {
       color: $color-black;
-      font-size: 16px;
+      font-size: $pd-16;
       display: flex;
       align-items: center;
     }
 
     >.time {
       img {
-        margin-right: 8px;
+        margin-right: $pd-8;
       }
 
       >.showMore {
-        margin-left: 16px;
+        margin-left: $pd-16;
       }
     }
 

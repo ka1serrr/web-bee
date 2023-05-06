@@ -11,7 +11,7 @@ export const Article = ({ img, comment, commentsNumber, time, timeAgo, title, vi
 
   useEffect(() => {
     if (index === 0) {
-      setArticleOpen(false);
+      setArticleOpen(true);
     }
   }, []);
 
