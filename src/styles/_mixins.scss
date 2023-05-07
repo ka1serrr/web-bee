@@ -25,3 +25,26 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+@mixin header-profile {
+  cursor: pointer;
+  padding: $pd-8 $pd-16;
+  @include flex-justify;
+  color: $color-black;
+  font-size: 14px;
+  background: $color-white;
+}
+
+@mixin profile-block {
+  width: 264px;
+  margin-top: $pd-32;
+}
+
+@mixin arrow {
+  transition: transform .2s ease-in;
+}
+
+@mixin arrowInActive {
+  transform: rotateX(180deg);
+  transition: transform .2s ease-in;
+}

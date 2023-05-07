@@ -20,7 +20,7 @@ const NavBarLeftContent = () => {
         </NavLink>
       </li>
       {navBarLeftBase.map((item: NavItem) => (
-        <NavBarItem title={item.title} link={item.link} img={item.img} />
+        <NavBarItem title={item.title} link={item.link} img={item.img} key={item.title} />
       ))}
     </>
   );
@@ -30,7 +30,7 @@ const NavBarRightContent = () => {
   return (
     <>
       {navBarRightBase.map((item: NavItem) => (
-        <NavBarItem title={item.title} link={item.link} img={item.img} />
+        <NavBarItem title={item.title} link={item.link} img={item.img} key={item.title} />
       ))}
       <li className={styles.settings}>
         <div className={styles.link}>

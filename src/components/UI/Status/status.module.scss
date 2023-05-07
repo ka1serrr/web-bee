@@ -2,10 +2,40 @@
 @import '@/styles/_mixins.scss';
 
 .status {
-  width: 264px;
-  margin-top: $pd-32;
+  @include profile-block;
 
   >.header {
+    @include header-profile;
 
+    >span {
+      display: block;
+      font-weight: 500;
+    }
+
+    >.arrow {
+      @include arrow
+    }
+
+    >.arrowInActive {
+      @include arrowInActive
+    }
+  }
+
+  .messageBlock {
+    background: $color-white;
+    transition: visibility .2s ease-in, opacity .2s ease-in;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .messageClosedBlock {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .2s ease-in, opacity .2s ease-in;
+  }
+
+  .wrapper {
+    padding: $pd-8 $pd-16 $pd-16;
   }
 }

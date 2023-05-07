@@ -9,6 +9,7 @@ const Articles = () => {
     <>
       {mainPageData.map((item: MainPageArticle, index: number) => (
         <Article
+          key={item.title}
           index={index}
           title={item.title}
           img={item.img}

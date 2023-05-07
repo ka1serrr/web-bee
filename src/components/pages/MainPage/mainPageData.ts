@@ -9,7 +9,7 @@ export const mainPageData: MainPageArticle[] = [
     time: '10:30 am',
     timeAgo: 50,
     views: 432,
-    title: 'Sunset Sunset Sunset',
+    title: 'Sunset Sunset',
     commentsNumber: 47,
   },
   {
