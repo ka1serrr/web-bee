@@ -50,7 +50,7 @@ export const NavBar = () => {
           <ul className={styles.navigation}>
             <NavBarLeftContent />
           </ul>
-          <ul className={styles.navigation}>
+          <ul className={`${styles.navigation} ${styles.navigationMedia}`}>
             <NavBarRightContent />
           </ul>
         </div>

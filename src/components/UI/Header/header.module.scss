@@ -46,3 +46,19 @@
     }
   }
 }
+
+@media (max-width: 430px) {
+  .header {
+    .wrapper {
+      justify-content: center;
+    }
+
+    .headerStatistic {
+
+      >.headerStatisticItem {
+        margin-top: 10px;
+      }
+    }
+  }
+
+}

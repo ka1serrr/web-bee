@@ -38,4 +38,16 @@
   .wrapper {
     padding: $pd-8 $pd-16 $pd-16;
   }
+
+  .statusActive {
+    padding: $pd-8 $pd-16 $pd-16;
+    height: auto;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 777px) {
+  .status {
+    display: none;
+  }
 }

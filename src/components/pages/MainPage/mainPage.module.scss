@@ -16,3 +16,15 @@
   .profileAndSettings {
   }
 }
+
+@media (max-width: 770px){
+  .mainPage {
+    .content {
+      justify-content: center;
+    }
+
+    .articles {
+      margin-right: 0;
+    }
+  }
+}

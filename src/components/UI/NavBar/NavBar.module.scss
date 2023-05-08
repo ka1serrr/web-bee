@@ -38,6 +38,9 @@
       }
     }
 
+    .navigationMedia {
+
+    }
     .link {
       @include flex-justify;
       justify-content: center;
@@ -53,6 +56,18 @@
     .settings {
       width: 68px;
       min-height: 40px;
+    }
+  }
+}
+
+@media (max-width: 777px) {
+  .nav {
+    .wrapper {
+      @include flex-center;
+    }
+
+    .navigationMedia {
+      display: none;
     }
   }
 }

@@ -35,7 +35,7 @@ export const Status = () => {
             <Button text='Save' margin='8px' />
           </div>
         ) : (
-          <div className={styles.wrapper}>
+          <div className={styles.statusActive}>
             {message}
             <Button text='Edit' margin='8px' />
           </div>

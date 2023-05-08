@@ -38,3 +38,9 @@
     margin: $pd-16 auto 0;
   }
 }
+
+@media (max-width: 777px) {
+  .profile {
+    display: none;
+  }
+}

@@ -43,3 +43,9 @@
     padding: $pd-16 $pd-16 0.1px;
   }
 }
+
+@media (max-width: 777px) {
+  .profileNavigation {
+    display: none;
+  }
+}

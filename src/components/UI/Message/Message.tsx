@@ -2,13 +2,14 @@ import styles from './message.module.scss';
 import { useTypedSelector } from '@/hooks/useTypedSelector';
 import { useActions } from '@/hooks/useActions';
 import { useDispatch } from 'react-redux';
+import React from 'react';
 
 export const Message = () => {
   const { message } = useTypedSelector((state) => state.message);
   const dispatch = useDispatch();
   const { changeMessage, setIsEditing } = useActions();
 
-  const setMessage = (e) => {
+  const setMessage = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     changeMessage(value);
   };

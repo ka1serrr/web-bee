@@ -108,3 +108,15 @@
     transition: visibility .2s ease, opacity .2s ease;
   }
 }
+
+@media (max-width: 777px) {
+  .article, articleClosed {
+    >.wrapper {
+      padding: 17px;
+    }
+  }
+
+  .articleClosed {
+    max-height: 80px;
+  }
+}
