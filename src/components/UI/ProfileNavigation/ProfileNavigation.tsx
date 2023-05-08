@@ -3,13 +3,13 @@ import { useState } from 'react';
 import { ProfileNavigationItem } from '@/components/UI/ProfileNavigation/ProfileNavigationItem/ProfileNavigationItem';
 import { profileNavigationData } from './dataMyProfile';
 import { settingsNavigationData } from './dataSettings';
-import { ProfileNavigationData, ProfileNavigation } from './types';
+import { ProfileNavigationData, ProfileNavigationItem } from './types';
 import clsx from 'clsx';
 
 const ProfileNavigationItems = ({ data }: ProfileNavigationData) => {
   return (
     <>
-      {data.map((item: ProfileNavigation) => (
+      {data.map((item: ProfileNavigationItem) => (
         <ProfileNavigationItem
           key={item.text}
           img={item.img}

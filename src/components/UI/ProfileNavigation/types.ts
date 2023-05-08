@@ -1,7 +1,7 @@
 type ColorBg = '#E33939' | '#47B091' | '#FFFFFF';
 type Color = '#FFFFFF' | '#8F8F8F';
 
-export interface ProfileNavigation {
+export interface ProfileNavigationItem {
   img: string;
   text: string;
   additionalString?: string;
@@ -11,5 +11,5 @@ export interface ProfileNavigation {
   link: string;
 }
 export interface ProfileNavigationData {
-  data: ProfileNavigation[];
+  data: ProfileNavigationItem[];
 }
