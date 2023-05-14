@@ -15,12 +15,10 @@ const Articles = () => {
           index={index}
           title={item.title}
           img={item.img}
-          time={item.time}
           timeAgo={item.timeAgo}
           comment={item.comment}
           views={item.views}
           commentsNumber={item.commentsNumber}
-          author={item.author}
         />
       ))}
     </>
