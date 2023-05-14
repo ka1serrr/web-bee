@@ -1,5 +1,7 @@
 import styles from './header.module.scss';
+import { useTimer } from '@/hooks/useTimer';
 export const Header = () => {
+  useTimer();
   return (
     <header className={styles.header}>
       <div className='container'>

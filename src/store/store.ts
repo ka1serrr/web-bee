@@ -12,6 +12,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { messageSlice } from '@/slices/messageSlice';
+import { userSlice } from '@/slices/userSlice';
 
 const persistConfig: PersistConfig<any> = {
   key: 'root',
@@ -21,6 +22,7 @@ const persistConfig: PersistConfig<any> = {
 
 const rootReducer = combineReducers({
   message: messageSlice.reducer,
+  user: userSlice.reducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

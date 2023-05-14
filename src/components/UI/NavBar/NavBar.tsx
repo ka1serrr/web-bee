@@ -4,31 +4,27 @@ import { navBarLeftBase } from './navBarLeftBase';
 import { NavBarItem } from '@/components/UI/NavBar/NavBarItem/NavBarItem';
 import { NavItem } from '@/components/UI/NavBar/types';
 import { navBarRightBase } from '@/components/UI/NavBar/navBarRightBase';
+import { Hamburger } from '@/components/UI/Hamburger/Hamburger';
 
-// TODO: для планшетов и телефонов нарисовать выезжающую штучку.
 const NavBarLeftContent = () => {
   return (
-    <>
+    <ul className={styles.navigation}>
       <li className={styles.navItem}>
         <NavLink to='/' className={({ isActive }) => (isActive ? styles.linkActive : styles.link)}>
-          <div className='hamburger'>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+          <Hamburger />
           <span>Activity</span>
         </NavLink>
       </li>
       {navBarLeftBase.map((item: NavItem) => (
         <NavBarItem title={item.title} link={item.link} img={item.img} key={item.title} />
       ))}
-    </>
+    </ul>
   );
 };
 
 const NavBarRightContent = () => {
   return (
-    <>
+    <ul className={styles.navigation}>
       {navBarRightBase.map((item: NavItem) => (
         <NavBarItem title={item.title} link={item.link} img={item.img} key={item.title} />
       ))}
@@ -38,7 +34,7 @@ const NavBarRightContent = () => {
           <img src='img/navbar/navRight/arrow-down.svg' alt='' />
         </div>
       </li>
-    </>
+    </ul>
   );
 };
 
@@ -47,12 +43,8 @@ export const NavBar = () => {
     <nav className={styles.nav}>
       <div className='container'>
         <div className={styles.wrapper}>
-          <ul className={styles.navigation}>
-            <NavBarLeftContent />
-          </ul>
-          <ul className={`${styles.navigation} ${styles.navigationMedia}`}>
-            <NavBarRightContent />
-          </ul>
+          <NavBarLeftContent />
+          <NavBarRightContent />
         </div>
       </div>
     </nav>

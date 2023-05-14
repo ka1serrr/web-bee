@@ -3,10 +3,8 @@ import { Article } from '@/components/UI/Article/Article';
 import { mainPageData } from './mainPageData';
 import { MainPageArticle } from '@/components/pages/MainPage/types';
 import { Profile } from '@/components/UI/Profile/Profile';
-import { useTimer } from '@/hooks/useTimer';
 
 const Articles = () => {
-  useTimer();
   return (
     <>
       {mainPageData.map((item: MainPageArticle, index: number) => (

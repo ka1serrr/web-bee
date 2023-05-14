@@ -1,5 +1,4 @@
 import styles from './timerPage.module.scss';
-import { useEffect, useState } from 'react';
 import { useTimer } from '@/hooks/useTimer';
 
 function Timer() {

@@ -2,10 +2,8 @@ import styles from './mapPage.module.scss';
 import { MapComponent } from '@/components/UI/Map/MapComponent';
 import { useState } from 'react';
 import Loader from '@/components/UI/Loader/Loader';
-import { useTimer } from '@/hooks/useTimer';
 
 const MapPage = () => {
-  useTimer();
   const [loading, setLoading] = useState(true);
   return (
     <div className={styles.map}>
