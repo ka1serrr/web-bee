@@ -1,0 +1,10 @@
+@import '@/styles/_vars.scss';
+
+.button {
+  color: $color-white;
+  background: $color-blue;
+  padding: $pd-8;
+  border-radius: 4px;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+@import '@/styles/_vars.scss';
+
+.hamburger {
+  margin-right: $pd-8;
+  span {
+    background: $color-black;
+    width: 13px;
+    height: 2px;
+    margin-bottom: 3px;
+    display: block;
+  }
+}

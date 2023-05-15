@@ -1,0 +1,50 @@
+@import "@/styles/_vars.scss";
+@import "@/styles/_mixins.scss";
+
+.user {
+  padding: $pd-32 50px;
+  background: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 264px;
+
+  >.avatar {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 132px;
+    overflow: hidden;
+    height: 132px;
+
+  }
+
+  >.name {
+    text-align: center;
+    color: $color-black;
+    font-size: 18px;
+    margin-top: $pd-16;
+  }
+
+  >.jobTitle {
+    text-align: center;
+    font-size: 14px;
+    margin-top: $pd-8;
+    color: $color-secondary-tx
+  }
+
+  >.socialnets {
+    @include flex-justify;
+    width: 76px;
+    margin: $pd-16 auto 0;
+
+    >img {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 777px) {
+  .user {
+    display: none;
+  }
+}

@@ -1,0 +1,64 @@
+@import "@/styles/_mixins.scss";
+@import "@/styles/_vars.scss";
+
+.header {
+  background: $color-white;
+  min-height: 64px;
+  width: 100%;
+  padding: $pd-8 0;
+
+  .wrapper {
+    @include flex-justify;
+    flex-wrap: wrap;
+  }
+
+  .headerUserPages {
+    @include flex-justify;
+    img {
+      margin-right: $pd-8;
+    }
+    span {
+      font-weight: 500;
+    }
+  }
+
+  .headerStatisticWrapper {
+    max-width: 232px;
+    width: 100%;
+  }
+  .headerStatistic {
+    @include flex-ul-row;
+
+    >.headerStatisticItem {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+
+      >img {
+        display: block;
+      }
+      >span {
+        display: block;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    .wrapper {
+      justify-content: center;
+    }
+
+    .headerStatistic {
+
+      >.headerStatisticItem {
+        margin-top: 10px;
+      }
+    }
+  }
+
+}

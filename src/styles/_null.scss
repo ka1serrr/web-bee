@@ -98,15 +98,27 @@ legend {
   display: block;
 }
 
-.body {
+body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  background-color: $color-bg;
 }
 
 .container {
   max-width: calc(1080px + 32px + 264px);
   width: 100%;
   margin: 0 auto;
+}
+
+.hamburger {
+  margin-right: $pd-8;
+  span {
+    background: $color-black;
+    width: 13px;
+    height: 2px;
+    margin-bottom: 3px;
+    display: block;
+  }
 }
 
 

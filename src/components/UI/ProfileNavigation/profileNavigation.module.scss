@@ -1,0 +1,45 @@
+@import "@/styles/_vars.scss";
+@import "@/styles/_mixins.scss";
+
+.profileNavigation {
+  @include profile-block;
+
+  >.header {
+   @include header-profile;
+
+    >span {
+      display: block;
+      font-weight: 500;
+    }
+  }
+
+  .itemsWrapper {
+    background: $color-white;
+    transition: visibility .2s ease-in, opacity .2s ease-in;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  .arrow {
+    @include arrow
+  }
+
+  .arrowInActive {
+    @include arrowInActive
+  }
+
+  .items {
+    border-top: 2px solid  $color-grey;
+  }
+
+  .wrapper {
+    padding: $pd-16 $pd-16 0.1px;
+  }
+}
+
+@media (max-width: 777px) {
+  .profileNavigation {
+    display: none;
+  }
+}

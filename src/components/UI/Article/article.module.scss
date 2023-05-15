@@ -1,0 +1,16 @@
+@import '@/styles/_vars.scss';
+
+.article {
+  background: $color-white;
+  margin-bottom: $pd-32;
+}
+
+@media (max-width: 777px) {
+   articleClosed {
+    padding: 17px;
+  }
+
+  .articleClosed {
+    max-height: 80px;
+  }
+}

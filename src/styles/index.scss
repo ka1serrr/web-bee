@@ -1,4 +1,5 @@
 @import "_mixins.scss";
-@include font-face('Roboto', 400, normal, './fonts/roboto-regular.woof2')
+@include font-face('Roboto', 400, normal, './fonts/Roboto-Regular.woff2');
+@include font-face('Roboto', 500, normal, './fonts/Roboto-Medium.woff2');
 @import "_null.scss";
 @import "_vars.scss";

@@ -1,0 +1,30 @@
+@import '@/styles/_vars.scss';
+
+.mainPage {
+  margin-top: $pd-32;
+
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .articles {
+    margin-right: $pd-32;
+  }
+
+  .profileAndSettings {
+  }
+}
+
+@media (max-width: 770px){
+  .mainPage {
+    .content {
+      justify-content: center;
+    }
+
+    .articles {
+      margin-right: 0;
+    }
+  }
+}

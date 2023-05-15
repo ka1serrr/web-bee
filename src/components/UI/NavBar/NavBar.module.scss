@@ -1,0 +1,70 @@
+@import "@/styles/_vars.scss";
+@import "@/styles/_mixins.scss";
+
+.nav {
+  width: 100%;
+  min-height: 40px;
+  background: $color-bg2;
+
+  .wrapper {
+    @include flex-justify;
+    min-height: 40px;
+  }
+
+  .navigation {
+    @include flex-ul-row;
+
+    min-height: 40px;
+
+    >.navItem {
+      width: 106px;
+      min-height: 40px;
+      transition: background-color .2s ease-in;
+
+      &:hover {
+        background-color: $color-grey;
+      }
+
+      >.linkActive {
+        @include flex-justify;
+        justify-content: center;
+        background: $color-bg;
+        width: 100%;
+        height: 100%;
+
+        >img {
+          margin-right: $pd-8;
+        }
+      }
+    }
+
+    .link {
+      @include flex-justify;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+
+      .img {
+        margin-right: $pd-8;
+      }
+    }
+
+    .settings {
+      width: 68px;
+      min-height: 40px;
+    }
+  }
+}
+
+@media (max-width: 777px) {
+  .nav {
+    .wrapper {
+      @include flex-center;
+    }
+
+    .navigationMedia {
+      display: none;
+    }
+  }
+}

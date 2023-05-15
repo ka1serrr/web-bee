@@ -1,0 +1,44 @@
+@import "@/styles/_vars.scss";
+@import "@/styles/_animations.scss";
+@include slightCloseOpenAnimation;
+
+
+.articleClosed {
+  animation-duration: 0.5s;
+  animation-name: slightCloseOpen;
+  max-height: 56px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 17px $pd-32;
+
+
+  .articleClosedContent {
+    display: flex;
+    justify-content: space-between;
+
+    >.title, .time {
+      color: $color-black;
+      font-size: $pd-16;
+      display: flex;
+      align-items: center;
+    }
+
+    >.time {
+      img {
+        margin-right: $pd-8;
+      }
+
+      >.showMore {
+        margin-left: $pd-16;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 777px) {
+  .articleClosed {
+    padding: 17px;
+    max-height: 80px;
+  }
+}
