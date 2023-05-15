@@ -1,31 +1,24 @@
 import styles from './profileNavigationItem.module.scss';
-import { ProfileNavigationData } from '../types';
+import { IProfileNavigation, ProfileNavigationData } from '../types';
 import { Link } from 'react-router-dom';
+import { FC } from 'react';
 
-export const ProfileNavigationItem = ({
-  img,
-  color,
-  colorBg,
-  additionalString,
-  notifications,
-  text,
-  link,
-}: ProfileNavigationData) => {
-  let formatedNotifications: number;
-  if (notifications) {
-    formatedNotifications = new Intl.NumberFormat('en-IN').format(notifications);
+export const ProfileNavigationItem: FC<IProfileNavigation> = ({ data }) => {
+  let formattedNotifications: number;
+  if (data.notifications) {
+    formattedNotifications = new Intl.NumberFormat('en-IN').format(data.notifications);
   }
 
   return (
-    <Link to={link}>
+    <Link to={data.link}>
       <div className={styles.item}>
         <div className={styles.text}>
-          <img src={`${img}`} alt='person' />
-          <span>{text}</span>
+          <img src={`${data.img}`} alt='person' />
+          <span>{data.text}</span>
         </div>
-        <div className={styles.notifications} style={{ color: color, backgroundColor: colorBg }}>
-          <span>{additionalString} </span>
-          {formatedNotifications}
+        <div className={styles.notifications} style={{ color: data.color, backgroundColor: data.colorBg }}>
+          <span>{data?.additionalString} </span>
+          {formattedNotifications}
         </div>
       </div>
     </Link>

@@ -10,3 +10,7 @@ export interface ProfileNavigationData {
   color?: Color;
   link: string;
 }
+
+export interface IProfileNavigation {
+  data: ProfileNavigationData;
+}

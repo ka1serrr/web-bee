@@ -1,22 +1,22 @@
 import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
-import { useEffect } from 'react';
+import { FC, useEffect } from 'react';
 
-interface IMapComponent {
+interface MapComponentProps {
   // eslint-disable-next-line @typescript-eslint/ban-types
-  callBack: Function;
+  onLoadCallback: (boolean) => void;
 }
 
-export const MapComponent = ({ callBack }: IMapComponent) => {
-  const defaultState = {
-    center: [55.621982, 37.607846],
-    zoom: 15,
-    controls: ['zoomControl', 'fullscreenControl'],
-  };
+const defaultState = {
+  center: [55.621982, 37.607846],
+  zoom: 15,
+  controls: ['zoomControl', 'fullscreenControl'],
+};
 
+export const MapComponent: FC<MapComponentProps> = ({ onLoadCallback }) => {
   return (
     <YMaps>
       <Map
-        onLoad={() => callBack(false)}
+        onLoad={() => onLoadCallback(false)}
         defaultState={defaultState}
         width='100%'
         height='70vh'

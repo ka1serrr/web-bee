@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { Message } from '@/components/UI/Message/Message';
 import { Button } from '@/components/UI/Button/Button';
 import { useTypedSelector } from '@/hooks/useTypedSelector';
+import { useActions } from '@/hooks/useActions';
 
 export const Status = () => {
   const [statusOpen, setStatusOpen] = useState<boolean>(true);
@@ -11,6 +12,8 @@ export const Status = () => {
   const closeStatus = () => {
     setStatusOpen(!statusOpen);
   };
+
+  const { toggleIsEditing } = useActions();
 
   return (
     <div className={styles.status}>
@@ -32,12 +35,12 @@ export const Status = () => {
         {isEditing ? (
           <div className={styles.wrapper}>
             <Message />
-            <Button text='Save' margin='8px' />
+            <Button text='Save' margin='8px' onClick={toggleIsEditing} />
           </div>
         ) : (
           <div className={styles.statusActive}>
             {message}
-            <Button text='Edit' margin='8px' />
+            <Button text='Edit' margin='8px' onClick={toggleIsEditing} />
           </div>
         )}
       </div>

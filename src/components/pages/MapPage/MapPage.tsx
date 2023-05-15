@@ -13,7 +13,7 @@ const MapPage = () => {
             <span>Basic map</span>
           </div>
           {loading && <Loader />}
-          <MapComponent callBack={setLoading} />
+          <MapComponent onLoadCallback={setLoading} />
         </div>
       </div>
     </div>

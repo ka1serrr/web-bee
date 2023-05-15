@@ -13,7 +13,7 @@ export const messageSlice = createSlice({
     changeMessage: (state, action: PayloadAction<string>) => {
       state.message = action.payload;
     },
-    setIsEditing: (state) => {
+    toggleIsEditing: (state) => {
       state.isEditing = !state.isEditing;
     },
   },

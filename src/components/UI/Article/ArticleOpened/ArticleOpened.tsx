@@ -1,8 +1,9 @@
 import styles from './articleOpened.module.scss';
 import { CommentsSection } from '@/components/UI/CommentsSection/CommentsSection';
 import { IOpenedArticle } from '@/components/pages/MainPage/types';
+import { FC } from 'react';
 
-export const ArticleOpened = ({ img, views, commentsNumber, comment }: IOpenedArticle) => {
+export const ArticleOpened: FC<IOpenedArticle> = ({ img, views, commentsNumber, comment }) => {
   return (
     <div className={styles.wrapper}>
       <img className={styles.image} src={`${img}`} alt='bg' />

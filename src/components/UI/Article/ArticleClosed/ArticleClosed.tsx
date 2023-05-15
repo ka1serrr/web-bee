@@ -1,7 +1,8 @@
 import styles from './articleClodes.module.scss';
 import { IClosedArticle } from '@/components/pages/MainPage/types';
+import { FC } from 'react';
 
-export const ArticleClosed = ({ timeAgo, title }: IClosedArticle) => {
+export const ArticleClosed: FC<IClosedArticle> = ({ timeAgo, title }) => {
   return (
     <div className={styles.articleClosed}>
       <div className={styles.articleClosedContent}>

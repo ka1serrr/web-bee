@@ -1,11 +1,10 @@
 import styles from './button.module.scss';
 import { IButton } from '@/components/UI/Button/types';
-import { useActions } from '@/hooks/useActions';
+import { FC } from 'react';
 
-export const Button = ({ text, margin }: IButton) => {
-  const { setIsEditing } = useActions();
+export const Button: FC<IButton> = ({ text, margin, onClick }) => {
   return (
-    <button className={styles.button} style={{ marginTop: margin }} onClick={setIsEditing}>
+    <button className={styles.button} style={{ marginTop: margin }} onClick={onClick}>
       {text}
     </button>
   );
